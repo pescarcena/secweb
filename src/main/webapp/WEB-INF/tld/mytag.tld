@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/sml/ns/j2ee  web-jsptaglibrary_2_0.xsd">
+    
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.1</jsp-version>
+	<url>/mytag</url>
+	
+	<tag>
+		<name>pager</name>
+		<tag-class>com.jmark.tag.PageNavTag</tag-class>
+		<body-content>empty</body-content>
+		<!-- 定义属性 -->
+		<attribute>
+			<name>pagination</name><!-- 属性名字 -->
+			<type>int</type><!-- 属性类型 -->
+			<required>false</required><!-- 是否必须 -->
+			<rtexprvalue>true</rtexprvalue><!-- 支持EL表达式 -->
+		</attribute>
+	</tag>
+</taglib>
