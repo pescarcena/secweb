@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.jmark.dao.UserDao;
 import com.jmark.entity.User;
 import com.jmark.service.UserService;
+import com.jmark.utils.Pager;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -17,6 +18,11 @@ public class UserServiceImpl implements UserService {
 	
 	public User getUserByName(String username) {
 		return userDao.getUserByName(username);
+	}
+
+	public List<User> findUserByPager(Pager pager) {
+		// TODO Auto-generated method stub
+		return userDao.findUserByPager(pager);
 	}
 
 }
