@@ -118,7 +118,7 @@ ul.ztree {
 	<!--main-container-part-->
 	<div id="content">
 		<iframe id="iframe" name="main" src="home.do" width="100%"
-			height="100%" frameborder="0" scrolling="yes" style="position: fixed;"></iframe>
+			height="100%" frameborder="0" marginwidth="0" marginheight="0" frameborder="0"  scrolling="no" ></iframe>
 	</div>
 
 	<!--end-main-container-part-->
